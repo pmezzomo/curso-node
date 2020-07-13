@@ -1,0 +1,13 @@
+<h1> Lista de itens </h1>
+
+<!--each para cada postagem faça algo. No caso exiba titulo e conteudo. 
+Para mostrar varias informaçoes do handlebars-->
+{{#each posts}}
+    <small>{{createdAt}}</small> <!--para mostrar a data-->
+    <h1>{{titulo}}</h1>
+    <p>{{conteudo}}</h2>
+    <!--aqui puxa os ids de cada post-->
+     <a href="deletar{{id}}"><button>Apagar</button></a>
+    <hr><!--cria uma linha-->
+{{/each}}
+

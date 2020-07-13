@@ -1,0 +1,12 @@
+<!--Nao precisou colocar as infos do HTML , pois já estao no main-->
+<!--GET envia os dados pela URL, não é seguro para dados sensiveis
+POST envia os dados sem passar pela URL (boa para formularios)
+Tem a rota DELETE e outras
+No action colocar a rota que quer enviar os dados do formulario -->
+<form action="/add" method="POST">
+    <p> Título:</p>
+    <input type="text" name="titulo">
+    <p>Conteúdo:</p>
+    <textarea name="conteudo"></textarea>
+    <button type="submit">Cadastrar postagem</button>
+</form>
